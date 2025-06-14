@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><title>Result</title></head>
+<body>
+  <h2>Result</h2>
+  {% if error %}
+    <p style="color:red">{{ error }}</p>
+  {% else %}
+    <p>Calculated Result: {{ result }}</p>
+    {% if extra %}
+        <p>Calculated extra operation: {{ extra }}</p>
+    {% endif %}
+  {% endif %}
+  <a href="/calculate/">Try Again</a>
+</body>
+</html>

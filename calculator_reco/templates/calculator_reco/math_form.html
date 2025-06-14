@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Math Form</title></head>
+<body>
+  <h2>Math Operation Form</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Calculate</button>
+  </form>
+</body>
+</html>
